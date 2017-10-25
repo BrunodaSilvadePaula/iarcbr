@@ -1,0 +1,336 @@
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+html body.notice-body #rodape {
+  position: fixed;
+  bottom: 0;
+}
+
+html body .active {
+  border-bottom: 1px solid;
+  background: #b3b3b5;
+}
+
+html body .menu-fixed {
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all 0.65s;
+  transition: all 0.65s;
+  top: 0;
+}
+
+html body .rb-close {
+  top: 5.4em;
+}
+
+html body .rb-week > div {
+  width: 70%;
+}
+
+html body .rb-week span.rb-city {
+  padding: 13% 10%;
+}
+
+html body .rb-week span {
+  padding: 25% 0;
+}
+
+html body .navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 15pt;
+}
+
+html body .navbar-brand {
+  line-height: 44px;
+}
+
+html body#front .bgParallax {
+  color: #FFF;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+html body#front .mask {
+  background-color: #000000;
+}
+
+html body#front .mask .image-topo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+html body#front .mask .image-topo:before {
+  opacity: .4;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body#front .mask .image-topo img {
+  width: 150px;
+}
+
+html body#front .mask .image-topo section {
+  margin-top: 15%;
+}
+
+html body#front .mask .image-notice {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+html body#front .mask .image-notice:before {
+  opacity: .4;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body#front .mask .image-service {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+html body#front .mask .image-service:before {
+  opacity: .4;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body#front .mask .image-contato {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  color: #ffffff;
+}
+
+html body#front .mask .image-contato:before {
+  opacity: .4;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body#front .mask .image-cliente {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  color: #ffffff;
+}
+
+html body#front .mask .image-cliente:before {
+  opacity: .4;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body#front #app {
+  background: #283168;
+}
+
+html body#front #app .border .logo {
+  border-right: 1px solid;
+}
+
+html body#front #app .container section {
+  margin-top: 7%;
+}
+
+html body#front #app .container section span {
+  text-align: center;
+  color: #ffffff;
+}
+
+html body#front #servicos .container section {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+html body#front #servicos .container .main ul .control-text {
+  padding: 8% 4% 0% 4%;
+}
+
+html body#front #servicos .container .main ul .control-text p {
+  font-size: unset !important;
+  padding: 0;
+}
+
+html body#front #servicos .container .main ul .control-text p span {
+  font-size: unset !important;
+  padding: 0;
+  color: #ffffff;
+  font-weight: initial;
+}
+
+html body#front #clientes .container section h1 {
+  text-align: center;
+}
+
+html body#front #noticias .container section h1 {
+  text-align: center;
+}
+
+html body#front #noticias .container .wrapper .notice {
+  background: #ffffff;
+  padding: 3px;
+  height: 400px;
+  margin: 5px;
+  width: 32%;
+}
+
+html body#front #noticias .container .wrapper .info a {
+  text-decoration: none;
+}
+
+html body#front #noticias .container .wrapper .info a:hover {
+  text-decoration: none;
+}
+
+html body#front #noticias .container .wrapper .info a:hover header {
+  text-decoration: underline;
+}
+
+html body#front #noticias .container .wrapper .info p {
+  word-wrap: break-word;
+}
+
+html body#front #noticias .container .wrapper header {
+  color: #000000;
+}
+
+html body#front #noticias .container .wrapper header h3 {
+  font-size: 2.4em;
+  text-align: center;
+}
+
+html body#front #noticias .container .wrapper header h4 {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+html body#front #noticias .container .ver-mais {
+  margin-top: 5%;
+}
+
+html body#front #contato .container section {
+  color: #ffffff;
+}
+
+html body#front #contato .container section h1 {
+  text-align: center;
+}
+
+html body#front #contato .container section label {
+  width: 73px;
+}
+
+html body#front #contato .container section .form-group {
+  margin-bottom: 3px;
+}
+
+html body#front #contato .container section button {
+  margin-top: 4%;
+}
+
+html body#front #contato .container section .info {
+  margin-top: 30%;
+}
+
+html body#front .content {
+  height: 100%;
+}
+
+html body .link-notice {
+  text-decoration: none;
+  color: #4453af;
+}
+
+html body .link-notice header h1 {
+  margin-bottom: 0px;
+}
+
+html body .link-notice header h2 {
+  margin-top: 0px;
+}
+
+html body .link-notice p {
+  color: #101010;
+}
+
+html body .link-notice:hover h1,
+html body .link-notice:hover h2 {
+  color: #283168;
+}
+
+html body .specific-notice h1,
+html body .specific-notice h2 {
+  text-align: center;
+  font-size: 35pt;
+}
+
+html body .specific-notice header h1 {
+  margin-bottom: 0px;
+}
+
+html body .specific-notice header h2 {
+  margin-top: 0px;
+}
+
