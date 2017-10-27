@@ -48,7 +48,7 @@
               <br/>
               <br/>
               <br/>
-              <span>
+              <span style="color:red!important">
                 <i class="fa fa-exclamation" aria-hidden="true"></i>
                 &nbsp;
                 {{ session('error') }}
@@ -60,7 +60,7 @@
           {!! Form::open(['route' => 'contato.store', 'method' => 'POST']) !!}
           <div class="form-group">
             <label for="email">Email *</label>
-            <input id="email" class="form-control" type="text" name="email">
+            <input id="email" class="form-control" type="email" name="email">
           </div>
           <div class="form-group">
             <label for="nome">Nome *</label>

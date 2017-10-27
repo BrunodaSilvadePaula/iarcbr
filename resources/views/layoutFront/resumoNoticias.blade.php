@@ -18,7 +18,11 @@
         </section>
         <div class="wrapper">
           @foreach($front['notices'] as $notice)
-            <div class="col-lg-4 notice">
+            @if(($notice->image != '') and ($notice->image != null))
+              <div class="col-lg-4 notice" style="background-image: url({{ asset('image') }}/{{$notice->image}})!important;">
+            @else
+              <div class="col-lg-4 notice">
+            @endif
               <div class="info">
                 <a href="{{ route('noticia.showNoticia', $notice->id) }}">
                   <article>
