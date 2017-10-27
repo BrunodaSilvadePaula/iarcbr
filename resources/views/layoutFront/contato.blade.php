@@ -1,7 +1,13 @@
 <style>
-.image-contato:before{
-  background-image: url("{{ asset('image') }}/{{$front['images'][6]->image}}");
-}
+  @if($front['images'][6]->color != '' and $front['images'][6]->color != null)
+    .image-contato:before{
+      background-color: {{$front['images'][6]->color}}!important;
+    }
+  @else
+    .image-contato:before{
+      background-image: url("{{ asset('image') }}/{{$front['images'][6]->image}}")!important;
+    }
+  @endif
 </style>
 <div id="contato" class="mask content">
   <div class="image-contato">

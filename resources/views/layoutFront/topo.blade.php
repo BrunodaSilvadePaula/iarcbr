@@ -1,7 +1,13 @@
 <style>
-.image-topo:before{
-  background-image: url("{{ asset('image') }}/{{$front['images'][5]->image}}");
-}
+  @if($front['images'][5]->color != '' and $front['images'][5]->color != null)
+    .image-topo:before{
+      background-color: {{$front['images'][5]->color}}!important;
+    }
+  @else
+    .image-topo:before{
+      background-image: url("{{ asset('image') }}/{{$front['images'][5]->image}}")!important;
+    }
+  @endif
 </style>
 <div id="topo" class="mask content header-paralax parallax">
   <div class="image-topo bgParallax parallax" data-speed="15">

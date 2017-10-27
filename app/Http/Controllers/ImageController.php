@@ -33,15 +33,20 @@ class ImageController extends Controller
       if($request->has('id'))
         $image = $this->get($request->id);
       else
-        $image = new Contact();
+        $image = new Image();
       if($request->hasFile('image')){
         $file = $request->file('image');
         $extensao = $file->guessExtension();
         $destination = public_path().DIRECTORY_SEPARATOR.'image';
         $fileName = $request->html_hash.'-'.pathinfo('Hearthstone.desktop')['extension'].'.'.$extensao;
         $file->move($destination, $fileName);
+        $image->image = $fileName;
       }
-      $image->image = $fileName;
+      if($request->has('color')){
+        $image->color = $request->color;
+      }else{
+        $image->color = '';
+      }
       $image->html_hash = $request->html_hash;
       $image->save();
       return redirect()->action('ImageController@index');

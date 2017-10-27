@@ -11,6 +11,10 @@
           <label for="image">Imagem</label>
           <input id="image" class="form-control" type="file" name="image">
         </div>
+        <div class="form-group">
+          <label for="color">Color</label>
+          <input id="color" class="form-control" type="text" name="color" value="{{$image->color}}">
+        </div>
         <div class="form-group col-lg-12">
           <img style="max-width:100%;" src="{{ asset('image/') }}/{{$image->image}}">
         </div>

@@ -1,8 +1,14 @@
 @if(count($front['notices']) > 0)
   <style>
-  .image-notice:before{
-    background-image: url("{{ asset('image') }}/{{$front['images'][4]->image}}");
-  }
+    @if($front['images'][4]->color != '' and $front['images'][4]->color != null)
+      .image-notice:before{
+        background-color: {{$front['images'][4]->color}}!important;
+      }
+    @else
+      .image-notice:before{
+        background-image: url("{{ asset('image') }}/{{$front['images'][4]->image}}")!important;
+      }
+    @endif
   </style>
   <div id="noticias" class="mask content">
     <div class="image-notice">
