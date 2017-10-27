@@ -3,6 +3,18 @@ $(document).ready(function(){
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
   });
+  $('#phone').mask("(99) 9999-9999?9").ready(function(event) {
+    var target, phone, element;
+    target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+    phone = target.value.replace(/\D/g, '');
+    element = $(target);
+    element.unmask();
+    if(phone.length > 10) {
+        element.mask("(99) 99999-999?9");
+    } else {
+        element.mask("(99) 9999-9999?9");  
+    }
+  });
   var posicaoApp = $('#app').position().top;
   var posicaoService = $('#servicos').position().top;
   var posicaoCliente = $('#clientes').position().top;

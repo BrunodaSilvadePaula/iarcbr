@@ -43,6 +43,7 @@
       <script src="{{ asset('js/jquery.fittext.js') }}"></script>
       <script src="{{ asset('js/boxgrid.js') }}"></script>
       <script src="{{ asset('js/front.js') }}"></script>
+      <script src="{{ asset('js/jquery.maskedinput.js') }}"></script>
       <script>
         $(function() {
             Boxgrid.init();          
