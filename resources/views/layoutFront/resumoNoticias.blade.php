@@ -19,9 +19,9 @@
         <div class="wrapper">
           @foreach($front['notices'] as $notice)
             @if(($notice->image != '') and ($notice->image != null))
-              <div class="col-lg-4 notice" style="background-image: url({{ asset('image') }}/{{$notice->image}})!important;">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 notice" style="background-image: url({{ asset('image') }}/{{$notice->image}})!important;">
             @else
-              <div class="col-lg-4 notice">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 notice">
             @endif
               <div class="info">
                 <a href="{{ route('noticia.showNoticia', $notice->id) }}">

@@ -236,6 +236,12 @@ html body#front #noticias .container .wrapper .notice {
   width: 32%;
 }
 
+@media (max-width: 500px) {
+  html body#front #noticias .container .wrapper .notice {
+    width: 100%;
+  }
+}
+
 html body#front #noticias .container .wrapper .info a {
   text-decoration: none;
 }
@@ -296,6 +302,12 @@ html body#front #contato .container section .info {
 
 html body#front .content {
   height: 100%;
+}
+
+@media (max-width: 500px) {
+  html body#front .content {
+    height: auto;
+  }
 }
 
 html body .link-notice {

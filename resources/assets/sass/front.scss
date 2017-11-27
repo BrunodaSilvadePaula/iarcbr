@@ -217,6 +217,9 @@ html{
           }
           .wrapper{
             .notice{
+              @media (max-width: 500px) {
+                width: 100%;
+              }
               background: #ffffff;
               padding: 3px;
               height: 400px;
@@ -277,6 +280,9 @@ html{
         }
       }
       .content{
+              @media (max-width: 500px) {
+        height: auto;
+              }
         height: 100%;
       }
     }
